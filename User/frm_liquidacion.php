@@ -12,7 +12,7 @@ $idUser=$_SESSION['MM_ID_USER'];
 validar($idUser);
 
 header('Content-Type: text/html; charset=UTF-8');
-$msconnect=mssql_connect("SQL2012","sa",'M$p2015');  
+$msconnect=mssql_connect("192.168.39.168:1433","sa",'M$p2015');
 $msdb=mssql_select_db("Municipio",$msconnect);  
 
 

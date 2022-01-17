@@ -5,7 +5,7 @@
 header('Content-Type: text/html; charset=UTF-8');
 
 
-$msconnect=mssql_connect("SQL2012","sa",'M$p2015');  
+$msconnect=mssql_connect("192.168.39.168:1433","sa",'M$p2015');
 $msdb=mssql_select_db("Municipio",$msconnect);  
 
 $rebro = "SELECT DESCRIPCION, VALOR FROM RT_RUBROS_X_TITULOS WHERE CODIGO_TITULO_REPORTE=203";  
